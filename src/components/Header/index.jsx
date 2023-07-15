@@ -41,7 +41,7 @@ const Header = () => {
     return (
         <header className="flex-between mb-6">
             <Logo />
-            <h1 className="text-xl font-semibold">Home</h1>
+            <h1 className="text-xl font-semibold">Music App</h1>
             <Avatar />
         </header>
     );
