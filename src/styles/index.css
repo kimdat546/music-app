@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.border-app {
+    @apply border-[2px] border-solid border-black;
+}
+
+.transition-app {
+    @apply transition-all duration-150 ease-out;
+}
+
+.bottom-line {
+    @apply block absolute z-[-1] w-[96%] h-full bottom-[-9px] left-[2%] rounded-md border-app bg-gray-light transition-app;
+}
+
+.flex-center {
+    @apply flex items-center justify-center;
+}
+
+.flex-between {
+    @apply flex items-center justify-between;
+}
+
+.absolute-center {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2;
+}
