@@ -5,7 +5,7 @@ import cx from "classnames";
 
 const Card = ({ type, image, name, songs }) => {
     const [isHover, setIsHover] = useState(false);
-    const classes = cx("group/card transition-app w-card", {
+    const classes = cx("group/card transition-app w-[45%] md:w-card", {
         "rotate-[-3deg] hover:translate-y-1 hover:rotate-[-3deg]":
             type === "left",
         "rotate-[5deg] mt-4 hover:translate-y-1 hover:rotate-[5deg]":
