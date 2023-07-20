@@ -1,14 +1,14 @@
-import React, { useMemo } from "react";
+import React from "react";
 import { BsBell } from "react-icons/bs";
-import { cld } from "../../configs";
+import { cld } from "@/configs";
 import { AdvancedImage } from "@cloudinary/react";
 import { scale } from "@cloudinary/url-gen/actions/resize";
 
-const Circle = () => (
+const Circle: React.FC = () => (
     <span className="w-pin h-pin border-app block rounded-full bg-yellow"></span>
 );
 
-const Logo = () => (
+const Logo: React.FC = () => (
     <div className="flex-1">
         <div className="flex-center w-avt h-avt bg-[#a8dee2] rounded-sm border-app">
             <div className=" flex w-[24px] h-[24px] flex-wrap">

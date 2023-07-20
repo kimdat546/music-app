@@ -1,8 +1,15 @@
 import React from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
-import CardPin from "../CardPin";
+import CardPin from "./CardPin";
 
-const CurrentPlaying = ({ image, artist, name, time }) => {
+type Props = {
+    image: string;
+    artist: string;
+    name: string;
+    time: string;
+};
+
+const CurrentPlaying: React.FC<Props> = ({ image, artist, name, time }) => {
     return (
         <div className="py-4 px-2 mb-6">
             <div className="w-full rotate-[3deg] transition-app">

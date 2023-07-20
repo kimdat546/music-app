@@ -1,8 +1,7 @@
 import React from "react";
-import { BsSearch } from "react-icons/bs";
-import Card from "../Card";
+import Card from "./Card";
 
-const Playlists = () => {
+const Playlists: React.FC = () => {
     return (
         <div className="flex justify-between pt-6 px-2 py-8">
             <Card

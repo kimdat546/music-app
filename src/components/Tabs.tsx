@@ -1,7 +1,13 @@
 import React, { useState } from "react";
 import cx from "classnames";
 
-const TabItem = ({ title, active, onClick }) => {
+type Props = {
+    title: string;
+    active: boolean;
+    onClick: () => void;
+};
+
+const TabItem: React.FC<Props> = ({ title, active, onClick }) => {
     const classes = cx("group/tab font-medium text-lg px-2 relative z-10", {
         "active bg-yellow": active,
     });

@@ -1,7 +1,7 @@
 import React from "react";
 import { BsSearch } from "react-icons/bs";
 
-const Search = () => {
+const Search: React.FC = () => {
     return (
         <div className="group relative z-10 mb-8 transition-app hover:-translate-y-0.5">
             <div className="relative flex-center border-app rounded-sm h-[60px] text-base w-full bg-white m-0">

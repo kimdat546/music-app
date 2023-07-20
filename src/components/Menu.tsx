@@ -7,7 +7,13 @@ import {
 } from "react-icons/ai";
 import cx from "classnames";
 
-const MenuItem = ({ icon, active, onClick }) => {
+type Props = {
+    icon: React.ReactNode;
+    active: boolean;
+    onClick: () => void;
+};
+
+const MenuItem: React.FC<Props> = ({ icon, active, onClick }) => {
     const classes = cx(
         "flex-center p-1.5 rounded-sm text-2xl text-white border-[2px] border-solid border-transparent w-[80px] h-[2em] transition-app hover:bg-yellow hover:text-black hover:border-black",
         {

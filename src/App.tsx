@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import SpotifyPlayer from "react-spotify-web-playback";
+import React from "react";
 import {
     Layout,
     Background,
@@ -10,10 +9,9 @@ import {
     Tabs,
     Playlists,
     CurrentPlaying,
-} from "./components";
-import axios from "axios";
+} from "@/components";
 
-function App() {
+const App: React.FC = () => {
     // get token from spotify api
     // const [token, setToken] = useState("");
 
@@ -59,6 +57,6 @@ function App() {
             </Background>
         </Layout>
     );
-}
+};
 
 export default App;

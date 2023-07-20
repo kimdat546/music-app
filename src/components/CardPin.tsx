@@ -1,7 +1,13 @@
 import React from "react";
 import cx from "classnames";
 
-const CardPin = ({ position, simple, hover }) => {
+type Props = {
+    position: "top-center" | "top" | "top-left" | "bottom-right";
+    simple?: boolean;
+    hover?: boolean;
+};
+
+const CardPin: React.FC<Props> = ({ position, simple, hover }) => {
     const styles = {
         "top-center": "top-[20px] left-1/2 rotate-[3deg] ",
         top: "top-[20px] left-[20px] rotate-[-5deg]",

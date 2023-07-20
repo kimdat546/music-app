@@ -1,9 +1,16 @@
 import React, { useState } from "react";
 import { AiFillPlayCircle } from "react-icons/ai";
-import CardPin from "../CardPin";
+import CardPin from "./CardPin";
 import cx from "classnames";
 
-const Card = ({ type, image, name, songs }) => {
+type Props = {
+    type: "left" | "right";
+    image: string;
+    name: string;
+    songs: string;
+};
+
+const Card: React.FC<Props> = ({ type, image, name, songs }) => {
     const [isHover, setIsHover] = useState(false);
     const classes = cx("group/card transition-app w-[45%] md:w-card", {
         "rotate-[-3deg] hover:translate-y-1 hover:rotate-[-3deg]":
