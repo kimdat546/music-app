@@ -7,3 +7,4 @@ export { default as Description } from "./Description";
 export { default as Header } from "./Header";
 export { default as Playlists } from "./Playlists";
 export { default as CurrentPlaying } from "./CurrentPlaying";
+export { default as Player } from "./Player";

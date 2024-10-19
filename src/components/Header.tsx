@@ -22,16 +22,8 @@ const Logo: React.FC = () => (
 );
 
 const Avatar = () => {
-    // Use the image with public ID, 'front_face'.
     const myImage = cld.image("cld-sample");
-
-    // get mp3 file from cloudinary have id is song_t3uofs
-    const mp3File = cld.video("song_t3uofs");
-
-    console.log(mp3File.toURL());
-
-    // Apply the transformation.
-    myImage.format("png"); // Deliver as PNG. */
+    myImage.format("png");
 
     return (
         <div className="flex gap-3 flex-1 justify-end">
